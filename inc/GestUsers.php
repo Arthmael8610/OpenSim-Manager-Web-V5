@@ -44,7 +44,7 @@ if (isset($_SESSION['authentification']))
 			
 			// *** Lecture BDD users  ***
 			$UserSelected = explode(" ", $_SESSION['login']);
-			$sql = 'SELECT * FROM users WHERE id="'.$_POST['id_user'].'"';
+			$sql = 'SELECT * FROM UserAccounts WHERE id="'.$_POST['id_user'].'"';
 			$req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.$mysqli->error());
 			$data = $req->fetch_assoc();
 			
@@ -77,7 +77,7 @@ if (isset($_SESSION['authentification']))
 	
 	// *** Lecture BDD users  ***
 	$UserSelected = explode(" ", $_SESSION['login']);
-	$sql = 'SELECT * FROM users WHERE (firstname="'.$UserSelected[0].'" AND lastname="'.$UserSelected[1].'")';
+	$sql = 'SELECT * FROM UserAccounts WHERE (firstname="'.$UserSelected[0].'" AND lastname="'.$UserSelected[1].'")';
 	$req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.$mysqli->error());
 	$data = $req->fetch_assoc();
 
