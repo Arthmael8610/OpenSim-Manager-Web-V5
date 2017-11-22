@@ -329,13 +329,12 @@
     function list_file($cur)
     {
         global $PHP_SELF, $order, $asc, $order0;
-var_dump($cur);
+
         if ($dir = opendir($cur))
         {
             /* tableaux */
             $tab_dir = array();
             $tab_file = array();
-
             /* extraction */
             while($file = readdir($dir))
             {
@@ -496,6 +495,7 @@ var_dump($cur);
     /* Extract Infos */
     function addScheme($entry,$base,$type)
     {
+        var_dump($entry, $base,$type);
         $tab['name']    = $entry;
         $tab['type']    = filetype($base."/".$entry);
         $tab['date']    = filemtime($base."/".$entry);

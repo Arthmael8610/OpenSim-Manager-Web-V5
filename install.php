@@ -125,7 +125,7 @@ $hostnameSSH = "'.$domaine.'";		// Url of server
 
 /* name of files INI  */
 $FichierINIRegions = "Regions.ini";          // ou RegionConfig.ini
-$FichierINIOpensim = "OpenSimDefaults.ini";  // ou OpenSim.ini
+$FichierINIOpensim = "OpenSim.ini";  // ou OpenSim.ini
 
 /* Themes */
 $themes = true;
