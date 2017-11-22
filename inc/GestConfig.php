@@ -20,8 +20,8 @@ if (isset($_SESSION['authentification']) && $_SESSION['privilege']>= 3)
    echo '<h1>'.$osmw_index_18.'</h1>'; 
     echo '<div class="clearfix"></div>';   
 	
-    $db = mysql_connect($hostnameBDD, $userBDD, $passBDD);
-    mysql_select_db($database,$db);
+    $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+    //mysql_select_db($database,$db);
     
     // *****************************************************************
     if (isset($_POST['cmd']))
@@ -40,7 +40,7 @@ if (isset($_SESSION['authentification']) && $_SESSION['privilege']>= 3)
                     `VersionOSMW` = '".$_POST['VersionOSMW']."' 
                 WHERE `config`.`id` = 1
             ";
-            $reqIns = mysql_query($sqlIns) or die('Erreur SQL !<p>'.$sqlIns.'</p>'.mysql_error());
+            $reqIns = $mysqli->query($sqlIns) or die('Erreur SQL !<p>'.$sqlIns.'</p>'.$mysqli->error());
 			echo "<p class='alert alert-success alert-anim'>";
             echo "<i class='glyphicon glyphicon-ok'></i>";
             echo " Configuration <strong>".$_POST['NewName']."</strong> ".$osmw_save_user_ok."</p>";
@@ -50,7 +50,7 @@ if (isset($_SESSION['authentification']) && $_SESSION['privilege']>= 3)
 
 	// *** Lecture BDD config  ***
 	$sql = 'SELECT * FROM config';
-	$req = mysql_query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
+	$req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.$mysqli->error());
 	
 	while($data = mysql_fetch_assoc($req))
 	{

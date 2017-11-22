@@ -53,11 +53,11 @@ if (isset($_SESSION['authentification']))
     // *******************************************************
     // Parcours des serveur installes
 
-    $db = mysql_connect($hostnameBDD, $userBDD, $passBDD);
-    mysql_select_db($database, $db);
+    $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+    //mysql_select_db($database, $db);
 
     $sql = 'SELECT * FROM moteurs';
-    $req = mysql_query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
+    $req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.$mysqli->error());
 
     while($data = mysql_fetch_assoc($req))
     {

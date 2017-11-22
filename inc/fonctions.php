@@ -27,11 +27,11 @@
 		
 		// Formulaire de choix du moteur a selectionne
 		// On se connecte a MySQL
-		$db = mysql_connect($hostnameBDD, $userBDD, $passBDD);
-		mysql_select_db($database,$db);
+		$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+		//mysql_select_db($database,$db);
 		
 		$sql = 'SELECT * FROM moteurs';
-		$req = mysql_query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
+		$req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
 		
 
 		echo '<form class="form-group" method="post" action="">';	
@@ -39,7 +39,7 @@
 		echo '<label for="OSSelect"></label>';
 		echo '<select class="form-control" name="OSSelect">';
 
-		while($data = mysql_fetch_assoc($req))
+		while($data = $req->fetch_assoc())
 		{
 			$sel = "";
 			if ($data['id_os'] == $_SESSION['opensim_select']) {$sel = "selected";}
@@ -55,7 +55,7 @@
 	}		
 	
 	/* ************************************ */
-	/* FONCTION affichage Entete Simulateur Selectionné et Niveau de securité */
+	/* FONCTION affichage Entete Simulateur Selectionnï¿½ et Niveau de securitï¿½ */
 	/* ************************************ */
 	function Affichage_Entete($simu)
 	{		
@@ -69,7 +69,7 @@
 	}	
 
 	/* ************************************ */
-	/* FONCTION Defini affichage bouton en fonction du Niveau de securité */
+	/* FONCTION Defini affichage bouton en fonction du Niveau de securitï¿½ */
 	/* ************************************ */
 	function Securite_Simulateur()
 	{		
@@ -150,14 +150,16 @@
 	/* ************************************ */
     function INI_Conf($cles, $valeur)
     {
+        $mysqli = new mysqli;
+        
         require 'inc/config.php';
-        // on se connecte à MySQL
-        $db = mysql_connect($hostnameBDD, $userBDD, $passBDD);
-        mysql_select_db($database,$db);
+        // on se connecte ï¿½ MySQL
+        $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+        //mysql_select_db($database,$db);
         
         $sql = "SELECT * FROM config";
-        $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
-        $data = mysql_fetch_array($req);
+        $req = $mysqli->query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+        $data = $req->fetch_assoc();
         
         switch ($valeur)
         {
@@ -187,17 +189,18 @@
     }
 
 	/* ************************************ */
-	/* FONCTION Recuperation en BDD en fonction du simulateur sélectionné */
+	/* FONCTION Recuperation en BDD en fonction du simulateur sï¿½lectionnï¿½ */
 	/* ************************************ */
     function INI_Conf_Moteur($cles, $valeur)
     {
+        $mysqli = new mysqli;
         require 'inc/config.php';
-        // On se connecte à MySQL
-        $db = mysql_connect($hostnameBDD, $userBDD, $passBDD);
-        mysql_select_db($database,$db);
+        // On se connecte ï¿½ MySQL
+        $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+        //mysql_select_db($database,$db);
         $sql = "SELECT * FROM moteurs WHERE id_os ='".$cles."'";
-        $req = mysql_query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
-        $data = mysql_fetch_array($req);
+        $req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
+        $data = $req->fetch_assoc();
         $Version = "";
 
         switch ($valeur)
@@ -232,12 +235,13 @@
 	/* ************************************ */
     function NbOpensim()
     {
+        $mysqli = new mysqli;
         require 'inc/config.php';
-        // on se connecte à MySQL
-        $db = mysql_connect($hostnameBDD, $userBDD, $passBDD);
-        mysql_select_db($database,$db);
+        // on se connecte ï¿½ MySQL
+        $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+       // mysql_select_db($database,$db);
         $sql = "SELECT * FROM moteurs";
-        $req = mysql_query($sql); 
+        $req = $mysqli->query($sql); 
 		$num_rows = mysql_num_rows($req);
 		mysql_close();
         return $num_rows;
@@ -256,7 +260,7 @@
     }
 
 	/* ************************************ */
-	/* FONCTION Test url complete pour image de la region sélectionné */
+	/* FONCTION Test url complete pour image de la region sï¿½lectionnï¿½ */
 	/* ************************************ */
     function Test_Url($server)
     {

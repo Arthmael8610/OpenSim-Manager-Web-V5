@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -98,17 +98,19 @@ if (isset($_POST['etape']) AND $_POST['etape'] == 1)
     $base   = trim($_POST['base']);
 	$domaine   = trim($_POST['domaine']);
 
+	$mysqli = new mysqli;
+
     // on vérifie la connectivité avec le serveur avant d'aller plus loin
-    if (!mysql_connect($hote, $login, $pass))
+    if(!$mysqli->connect($hote, $login, $pass, $base))
     {
         exit('<div class="alert alert-danger">Bad connection settings, installation corrupt ...</div>'. RETOUR);
     }
 
-    // on vérifie la connectivité avec la base avant d'aller plus loin
+    /*// on vérifie la connectivité avec la base avant d'aller plus loin
     if (!mysql_select_db($base))
     {
         exit('<div class="alert alert-danger">Wrong database name, installation corrupt ...</div>'. RETOUR);
-    }
+    }*/
 
     // le texte que l'on va mettre dans le config.php
     $texte = '
@@ -167,10 +169,10 @@ $lang      = "fr";
             $requetes .= $lecture;
         }
     }
-    $reqs = split(';', $requetes);
+    $reqs = explode(';', $requetes);
     foreach($reqs as $req)
     {
-        if (!mysql_query($req) AND trim($req) != '')
+        if (!$mysqli->query($req) AND trim($req) != '')
         {
             exit('ERREUR : '.$req);
         }
@@ -185,10 +187,10 @@ $lang      = "fr";
             $requetes .= $lecture;
         }
     }
-    $reqs = split(';', $requetes);
+    $reqs = explode(';', $requetes);
     foreach($reqs as $req)
     {
-        if (!mysql_query($req) AND trim($req) != '')
+        if (!$mysqli->query($req) AND trim($req) != '')
         {
             exit('ERREUR : '.$req);
         }
