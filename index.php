@@ -103,7 +103,7 @@ if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['pas
 	$mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
 	//mysql_select_db($database,$db);
 
-	$sql = 'SELECT * FROM UserAccounts';
+	$sql = 'SELECT * FROM users';
 	$req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.$mysqli->error());
 
 	while($data = $req->fetch_assoc())
