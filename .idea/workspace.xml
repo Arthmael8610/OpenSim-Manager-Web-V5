@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="758a2545-be1c-413c-a4c3-a0882df7789a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/inc/config.bu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/GestDirectory.php" afterPath="$PROJECT_DIR$/inc/GestDirectory.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/flags.php" afterPath="$PROJECT_DIR$/inc/flags.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/fonctions.php" afterPath="$PROJECT_DIR$/inc/fonctions.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/navbar.php" afterPath="$PROJECT_DIR$/inc/navbar.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/radmin.php" afterPath="$PROJECT_DIR$/inc/radmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/install.php" afterPath="$PROJECT_DIR$/install.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -100,17 +91,17 @@
       <file leaf-file-name="fonctions.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/inc/fonctions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="351" column="13" lean-forward="true" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="332" column="33" lean-forward="true" selection-start-line="332" selection-start-column="33" selection-end-line="332" selection-end-column="33" />
               <folding>
-                <marker date="1511361531325" expanded="true" signature="818:839" ph="SELECT * FRO... moteurs" />
-                <marker date="1511361531325" expanded="true" signature="1858:1868" ph="..." />
-                <marker date="1511361531325" expanded="true" signature="1869:2209" ph="..." />
-                <marker date="1511361531325" expanded="true" signature="1873:2201" ph="..." />
-                <marker date="1511361531325" expanded="true" signature="4797:4817" ph="SELECT * FRO... config" />
-                <marker date="1511361531325" expanded="true" signature="6159:6205" ph="SELECT * FRO... moteurs" />
-                <marker date="1511361531325" expanded="true" signature="7460:7481" ph="SELECT * FRO... moteurs" />
-                <marker date="1511361531325" expanded="true" signature="11032:11071" ph="..." />
+                <marker date="1511362326611" expanded="true" signature="818:839" ph="SELECT * FRO... moteurs" />
+                <marker date="1511362326611" expanded="true" signature="1858:1868" ph="..." />
+                <marker date="1511362326611" expanded="true" signature="1869:2209" ph="..." />
+                <marker date="1511362326611" expanded="true" signature="1873:2201" ph="..." />
+                <marker date="1511362326611" expanded="true" signature="4797:4817" ph="SELECT * FRO... config" />
+                <marker date="1511362326611" expanded="true" signature="6159:6205" ph="SELECT * FRO... moteurs" />
+                <marker date="1511362326611" expanded="true" signature="7460:7481" ph="SELECT * FRO... moteurs" />
+                <marker date="1511362326611" expanded="true" signature="10960:10999" ph="..." />
               </folding>
             </state>
           </provider>
@@ -306,12 +297,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511318856479</updated>
-      <workItem from="1511318857671" duration="11846000" />
+      <workItem from="1511318857671" duration="12178000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11846000" />
+    <option name="totallyTimeSpent" value="12178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1066" extended-state="6" />
@@ -729,17 +720,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inc/fonctions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="351" column="13" lean-forward="true" selection-start-line="351" selection-start-column="13" selection-end-line="351" selection-end-column="13" />
+        <state relative-caret-position="391">
+          <caret line="332" column="33" lean-forward="true" selection-start-line="332" selection-start-column="33" selection-end-line="332" selection-end-column="33" />
           <folding>
-            <marker date="1511361531325" expanded="true" signature="818:839" ph="SELECT * FRO... moteurs" />
-            <marker date="1511361531325" expanded="true" signature="1858:1868" ph="..." />
-            <marker date="1511361531325" expanded="true" signature="1869:2209" ph="..." />
-            <marker date="1511361531325" expanded="true" signature="1873:2201" ph="..." />
-            <marker date="1511361531325" expanded="true" signature="4797:4817" ph="SELECT * FRO... config" />
-            <marker date="1511361531325" expanded="true" signature="6159:6205" ph="SELECT * FRO... moteurs" />
-            <marker date="1511361531325" expanded="true" signature="7460:7481" ph="SELECT * FRO... moteurs" />
-            <marker date="1511361531325" expanded="true" signature="11032:11071" ph="..." />
+            <marker date="1511362326611" expanded="true" signature="818:839" ph="SELECT * FRO... moteurs" />
+            <marker date="1511362326611" expanded="true" signature="1858:1868" ph="..." />
+            <marker date="1511362326611" expanded="true" signature="1869:2209" ph="..." />
+            <marker date="1511362326611" expanded="true" signature="1873:2201" ph="..." />
+            <marker date="1511362326611" expanded="true" signature="4797:4817" ph="SELECT * FRO... config" />
+            <marker date="1511362326611" expanded="true" signature="6159:6205" ph="SELECT * FRO... moteurs" />
+            <marker date="1511362326611" expanded="true" signature="7460:7481" ph="SELECT * FRO... moteurs" />
+            <marker date="1511362326611" expanded="true" signature="10960:10999" ph="..." />
           </folding>
         </state>
       </provider>

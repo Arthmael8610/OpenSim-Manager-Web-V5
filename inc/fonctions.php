@@ -339,10 +339,8 @@ var_dump($cur);
             /* extraction */
             while($file = readdir($dir))
             {
-                echo 'starting loop';
                 if (is_dir($cur."/".$file))
                 {
-                    echo'is dir';
                     if (!in_array($file, array(".", "..")))
                     {
                         $tab_dir[] = addScheme($file, $cur, 'dir');
