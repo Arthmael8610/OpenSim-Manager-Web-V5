@@ -81,14 +81,14 @@
 if (isset($_POST['etape']) AND $_POST['etape'] == 1)
 {
     // on crée une constante dont on se servira plus tard
-    define('RETOUR', '<input class="btn btn-primary" type="button" value="Return of form" onclick="history.back()">');
+    $return = '<input class="btn btn-primary" type="button" value="Return of form" onclick="history.back()">';
 
     $fichier = './inc/config.php';
 
     if (file_exists($fichier) AND filesize($fichier ) > 0)
     {
         // si le fichier existe et qu'il n'est pas vide alors
-        exit('<div class="alert alert-danger">Not this configuration file, installation corrupt ...</div>'. RETOUR);
+        exit('<div class="alert alert-danger">Not this configuration file, installation corrupt ...</div>'. $return);
     }
 
     // on crée nos variables, et au passage on retire les éventuels espaces	
@@ -104,13 +104,13 @@ if (isset($_POST['etape']) AND $_POST['etape'] == 1)
     $mysqli->connect($hote, $login, $pass, $base);
     if($mysqli->connect_error)
     {
-        exit('<div class="alert alert-danger">Bad connection settings, installation corrupt ...</div>'. RETOUR);
+        exit('<div class="alert alert-danger">Bad connection settings, installation corrupt ...</div>'. $return);
     }
 
     /*// on vérifie la connectivité avec la base avant d'aller plus loin
     if (!mysql_select_db($base))
     {
-        exit('<div class="alert alert-danger">Wrong database name, installation corrupt ...</div>'. RETOUR);
+        exit('<div class="alert alert-danger">Wrong database name, installation corrupt ...</div>'. $return);
     }*/
 
     // le texte que l'on va mettre dans le config.php
@@ -148,15 +148,16 @@ $lang      = "fr";
 
 ?>';
 
-    if (!$ouvrir = fopen($fichier, 'w'))
+    file_put_contents($fichier, $texte);
+    /*if (!$ouvrir = fopen($fichier, 'w'))
     {
-        exit('<div class="alert alert-danger">Unable to open file : <strong>'. $fichier .'</strong>, installation corrupt ...</div>'. RETOUR);
+        exit('<div class="alert alert-danger">Unable to open file : <strong>'. $fichier .'</strong>, installation corrupt ...</div>'. $return);
     }
 
     if (fwrite($ouvrir, $texte) == FALSE)
     {
-        exit('<div class="alert alert-danger">Can not write to the file : <strong>'. $fichier .'</strong>, installation corrupt ...</div>'. RETOUR);
-    }
+        exit('<div class="alert alert-danger">Can not write to the file : <strong>'. $fichier .'</strong>, installation corrupt ...</div>'. $return);
+    }*/
 
     echo '<div class="alert alert-success">Creation of effected configuration file with success ...</div>';
     fclose($ouvrir);
@@ -211,7 +212,7 @@ $lang      = "fr";
 <div class="clearfix"></div>
 
 <footer class="footer">
-    <p><CENTER>Open Simulator Manager Web Intaller <?php echo date(Y); ?></CENTER></p>
+    <p><CENTER>Open Simulator Manager Web Intaller <?php echo date('Y'); ?></CENTER></p>
 </footer>
 </div>
 

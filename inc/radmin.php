@@ -35,11 +35,11 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWIS
 
 class RemoteAdmin
 {
-    function RemoteAdmin($sURL, $sPort, $pass)
+    function RemoteAdminfunc($sURL, $sPort, $pass)
     {
-        $this->simulatorURL = $sURL;   // String
-        $this->simulatorPort = $sPort; // Integer
-        $this->password = $pass;
+        $this->RemoteAdminfunc()->simulatorURL = $sURL;   // String
+        $this->RemoteAdminfunc()->simulatorPort = $sPort; // Integer
+        $this->RemoteAdminfunc()->password = $pass;
     }
                 
     function SendCommand($command, $params=array())
@@ -56,7 +56,7 @@ class RemoteAdmin
                 <struct>
                 <member>
                 <name>password</name>
-                <value><string>' . htmlspecialchars($this->password) . '</string></value>
+                <value><string>' . htmlspecialchars($this->RemoteAdminfunc()->password) . '</string></value>
             </member>';
         if (count($params) != 0)
         {
@@ -74,8 +74,8 @@ class RemoteAdmin
         //
 
 		// Now building headers and sending the data ;)
-        $host = $this->simulatorURL;
-        $port = $this->simulatorPort;
+        $host = $this->RemoteAdminfunc()->simulatorURL;
+        $port = $this->RemoteAdminfunc()->simulatorPort;
         $timeout = 5; // Timeout in seconds
 
 		error_reporting(0);

@@ -15,15 +15,15 @@
 	/* FONCTION choix du simulateur */
 	/* ************************************ */
 	function Select_Simulateur($simu)
-	{	
-		if ($translator && isset($_SESSION['authentification']))
-		{
-			require_once ('./inc/translator.php');
+	{
+	    $mysqli = new mysqli;
+
+			require_once ('translator.php');
 			echo('<div class="pull-right">');
-			include_once("./inc/flags.php");
+			include_once("flags.php");
 			echo('</div>');
-		}
-		require 'inc/config.php';
+
+		require 'config.php';
 		
 		// Formulaire de choix du moteur a selectionne
 		// On se connecte a MySQL
@@ -31,7 +31,7 @@
 		//mysql_select_db($database,$db);
 		
 		$sql = 'SELECT * FROM moteurs';
-		$req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
+		$req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.$mysqli->error());
 		
 
 		echo '<form class="form-group" method="post" action="">';	
@@ -51,7 +51,7 @@
 		echo '</div>';
 		echo'</form>';
 
-		mysql_close();
+		
 	}		
 	
 	/* ************************************ */
@@ -152,13 +152,13 @@
     {
         $mysqli = new mysqli;
         
-        require 'inc/config.php';
+        require 'config.php';
         // on se connecte � MySQL
         $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
         //mysql_select_db($database,$db);
         
         $sql = "SELECT * FROM config";
-        $req = $mysqli->query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+        $req = $mysqli->query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.$mysqli->error());
         $data = $req->fetch_assoc();
         
         switch ($valeur)
@@ -184,7 +184,7 @@
                 $Version = $data['urlOSMW'];
                 break;
             }
-            mysql_close();
+            
         return $Version;
     }
 
@@ -194,12 +194,12 @@
     function INI_Conf_Moteur($cles, $valeur)
     {
         $mysqli = new mysqli;
-        require 'inc/config.php';
+        require 'config.php';
         // On se connecte � MySQL
         $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
         //mysql_select_db($database,$db);
         $sql = "SELECT * FROM moteurs WHERE id_os ='".$cles."'";
-        $req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
+        $req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.$mysqli->error());
         $data = $req->fetch_assoc();
         $Version = "";
 
@@ -226,7 +226,7 @@
                 $Version = $data['id_os'];
                 break;
             }
-            mysql_close();
+            
         return $Version;
     }
 
@@ -236,14 +236,13 @@
     function NbOpensim()
     {
         $mysqli = new mysqli;
-        require 'inc/config.php';
+        require 'config.php';
         // on se connecte � MySQL
         $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
        // mysql_select_db($database,$db);
         $sql = "SELECT * FROM moteurs";
         $req = $mysqli->query($sql); 
-		$num_rows = mysql_num_rows($req);
-		mysql_close();
+		$num_rows = $req->num_rows();
         return $num_rows;
     }
 
@@ -330,7 +329,7 @@
     function list_file($cur)
     {
         global $PHP_SELF, $order, $asc, $order0;
-
+var_dump($cur);
         if ($dir = opendir($cur))
         {
             /* tableaux */
@@ -340,8 +339,10 @@
             /* extraction */
             while($file = readdir($dir))
             {
+                echo 'starting loop';
                 if (is_dir($cur."/".$file))
                 {
+                    echo'is dir';
                     if (!in_array($file, array(".", "..")))
                     {
                         $tab_dir[] = addScheme($file, $cur, 'dir');
@@ -444,6 +445,8 @@
             }
             echo '</table>';
             closedir($dir);
+        }else{
+            echo 'could not open dir.';
         }
     }
 
@@ -655,5 +658,5 @@
     function IsEmail($email)
     {
         $pattern = "^([a-z0-9_]|\\-|\\.)+@(([a-z0-9_]|\\-)+\\.)+[a-z]{2,7}$";
-        return (eregi($pattern,$email)) ? true : false;
+        return (preg_match($pattern,$email)) ? true : false;
     }

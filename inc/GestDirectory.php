@@ -65,7 +65,11 @@ if (isset($_SESSION['authentification']))
     $dir = "";
     $dir = INI_Conf_Moteur($_SESSION['opensim_select'], "address");
 
-    if ($dir) {list_file(rawurldecode($dir));}
+
+    if ($dir) {
+        //var_dump(rawurldecode($dir));
+        list_file($dir);
+    }
 
     else
     {

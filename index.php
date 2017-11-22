@@ -2,13 +2,14 @@
 $fichier = './inc/config.php';
 if (file_exists($fichier) AND filesize($fichier ) > 0)
 {
+    $return = '<input class="btn btn-primary" type="button" value="Return of form" onclick="history.back()">';
 
-require_once ('inc/config.php');
+    require_once ('inc/config.php');
 require_once ('inc/fonctions.php');
 require_once ('inc/radmin.php');
 if ($themes) {require_once ('./inc/themes.php');}
 
-if ($_GET['a'] == 'logout')
+if (isset($_GET['a']) && $_GET['a'] == 'logout')
 {
     $_SESSION = array();
     session_destroy();
@@ -29,7 +30,7 @@ session_start();
     <link rel="icon" href="img/favicon.ico">
     <title>OpenSimulator Manager Web</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" media="all" type="text/css" id="css" href="<?php echo $url; ?>" />
+    <link rel="stylesheet" media="all" type="text/css" id="css" href="<?php if(isset($url) && $url != ''){ echo $url; } ?>" />
     <link rel="stylesheet" href="css/btn3d.css" type="text/css" />
     <link rel="stylesheet" href="css/login.css" type="text/css" />
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
@@ -142,7 +143,7 @@ if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['pas
         }
 		
     }
-	mysql_close();
+	
 }
 
 
@@ -208,7 +209,7 @@ if (isset($_SESSION['authentification']))
 ?>
 
 <?php
-    if ($_GET['a'])
+    if (isset($_GET['a']))
     {
         $a = $_GET['a'];
 																						/* index.php v5.5 */
@@ -413,7 +414,7 @@ else
 </div>
 
 <footer class="footer">
-    <p class="text-center">Open Simulator Manager Web <?php echo date(Y); ?> - <?php echo INI_Conf(VersionOSMW, VersionOSMW); ?> </p>
+    <p class="text-center">Open Simulator Manager Web <?php echo date('Y'); ?> -<!--<?php echo INI_Conf(VersionOSMW, VersionOSMW); ?> --></p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -464,7 +465,7 @@ else
     <link rel="icon" href="img/favicon.ico">
     <title>OpenSimulator Manager Web</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-    <link rel="stylesheet" media="all" type="text/css" id="css" href="<?php echo $url; ?>" />
+    <link rel="stylesheet" media="all" type="text/css" id="css" href="<?php if(isset($url) && $url != ''){ echo $url; } ?>" />
     <link rel="stylesheet" href="css/btn3d.css" type="text/css" />
     <link rel="stylesheet" href="css/login.css" type="text/css" />
     <link rel="stylesheet" href="css/custom.css" type="text/css" />
@@ -489,7 +490,7 @@ else
 <?php
 // ********************************************************************************************************************************************
 // si le fichier n'existe  pas 
-        exit('<div class="alert alert-danger">!!! configuration file not exist, <a href="install.php"> Installation </a> !!! </div>'. RETOUR);
+        exit('<div class="alert alert-danger">!!! configuration file not exist, <a href="install.php"> Installation </a> !!! </div>'. $return);
 echo '</body>
 </html>';		
 }
