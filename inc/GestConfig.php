@@ -20,7 +20,7 @@ if (isset($_SESSION['authentification']) && $_SESSION['privilege']>= 3)
    echo '<h1>'.$osmw_index_18.'</h1>'; 
     echo '<div class="clearfix"></div>';   
 	
-    $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+    $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
     //mysql_select_db($database,$db);
     
     // *****************************************************************

@@ -27,7 +27,7 @@
 		
 		// Formulaire de choix du moteur a selectionne
 		// On se connecte a MySQL
-		$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+		$mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
 		//mysql_select_db($database,$db);
 		
 		$sql = 'SELECT * FROM moteurs';
@@ -154,7 +154,7 @@
         
         require 'inc/config.php';
         // on se connecte � MySQL
-        $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+        $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
         //mysql_select_db($database,$db);
         
         $sql = "SELECT * FROM config";
@@ -196,7 +196,7 @@
         $mysqli = new mysqli;
         require 'inc/config.php';
         // On se connecte � MySQL
-        $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+        $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
         //mysql_select_db($database,$db);
         $sql = "SELECT * FROM moteurs WHERE id_os ='".$cles."'";
         $req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
@@ -238,7 +238,7 @@
         $mysqli = new mysqli;
         require 'inc/config.php';
         // on se connecte � MySQL
-        $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+        $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
        // mysql_select_db($database,$db);
         $sql = "SELECT * FROM moteurs";
         $req = $mysqli->query($sql); 

@@ -2,6 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="758a2545-be1c-413c-a4c3-a0882df7789a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/GestAdminUsers.php" afterPath="$PROJECT_DIR$/inc/GestAdminUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/GestConfig.php" afterPath="$PROJECT_DIR$/inc/GestConfig.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/GestHypergrid.php" afterPath="$PROJECT_DIR$/inc/GestHypergrid.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/GestMap.php" afterPath="$PROJECT_DIR$/inc/GestMap.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/GestNPC.php" afterPath="$PROJECT_DIR$/inc/GestNPC.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/GestSimulateur.php" afterPath="$PROJECT_DIR$/inc/GestSimulateur.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/GestUsers.php" afterPath="$PROJECT_DIR$/inc/GestUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/fonctions.php" afterPath="$PROJECT_DIR$/inc/fonctions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inc/npc_inworld.php" afterPath="$PROJECT_DIR$/inc/npc_inworld.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,6 +22,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="download.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/download.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-57">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inc/index.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -23,104 +52,84 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GestUsers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/GestUsers.php">
+      <file leaf-file-name="navbar.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/navbar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-              <folding>
-                <marker date="1511319431816" expanded="true" signature="1695:1747" ph="SELECT * FRO... users" />
-                <marker date="1511319431816" expanded="true" signature="2024:2152" ph="UPDATE `user... " />
-                <marker date="1511319431816" expanded="true" signature="2337:2502" ph="UPDATE `user... " />
-                <marker date="1511319431816" expanded="true" signature="3230:3326" ph="SELECT * FRO... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestSimulateur.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/GestSimulateur.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1972">
-              <caret line="116" column="6" lean-forward="false" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
-              <folding>
-                <marker date="1511319630805" expanded="true" signature="2692:2977" ph="INSERT INTO moteurs... " />
-                <marker date="1511319630805" expanded="true" signature="3385:3802" ph="UPDATE moteu... " />
-                <marker date="1511319630805" expanded="true" signature="4198:4249" ph="DELETE FROM " />
-                <marker date="1511319630805" expanded="true" signature="5243:5264" ph="SELECT * FRO... moteurs" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GestNPC.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/GestNPC.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4046">
-              <caret line="238" column="85" lean-forward="true" selection-start-line="238" selection-start-column="85" selection-end-line="238" selection-end-column="85" />
-              <folding>
-                <marker date="1511320131726" expanded="true" signature="258:332" ph="SELECT * FRO... gestionnaire" />
-                <marker date="1511320131726" expanded="true" signature="1252:1262" ph="..." />
-                <marker date="1511320131726" expanded="true" signature="2477:2534" ph="DELETE FROM " />
-                <marker date="1511320131726" expanded="true" signature="2868:2927" ph="DELETE FROM " />
-                <marker date="1511320131726" expanded="true" signature="4911:4968" ph="DELETE FROM " />
-                <marker date="1511320131726" expanded="true" signature="5073:5137" ph="DELETE FROM " />
-                <marker date="1511320131726" expanded="true" signature="5242:5308" ph="DELETE FROM " />
-                <marker date="1511320131726" expanded="true" signature="5809:5837" ph="SELECT * FRO... gestionnaire" />
-                <marker date="1511320131726" expanded="true" signature="9365:9415" ph="SELECT * FRO... npc" />
-                <marker date="1511320131726" expanded="true" signature="10359:10444" ph="SELECT * FRO... inventaire" />
-                <marker date="1511320131726" expanded="true" signature="12881:12966" ph="SELECT * FRO... inventaire" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="install.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/install.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="129" column="15" lean-forward="true" selection-start-line="129" selection-start-column="15" selection-end-line="129" selection-end-column="15" />
+            <state relative-caret-position="-57">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file leaf-file-name="npc_inworld.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/npc_inworld.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="133" column="41" lean-forward="true" selection-start-line="133" selection-start-column="41" selection-end-line="133" selection-end-column="41" />
+            <state relative-caret-position="-399">
+              <caret line="44" column="4" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
               <folding>
-                <marker date="1511321996048" expanded="true" signature="3129:3148" ph="SELECT * FRO... users" />
-                <marker date="1511321996048" expanded="true" signature="4038:4059" ph="SELECT * FRO... moteurs" />
-                <marker date="1511321996048" expanded="true" signature="11395:11575" ph="..." />
-                <marker date="1511321996048" expanded="true" signature="11435:11508" ph="..." />
-                <marker date="1511321996048" expanded="true" signature="11539:11575" ph="..." />
-                <marker date="1511321996048" expanded="false" signature="13934:13941" ph="×" />
-                <marker date="1511321996048" expanded="false" signature="14375:14382" ph="×" />
-                <marker date="1511321996048" expanded="false" signature="14805:14812" ph="×" />
-                <marker date="1511321996048" expanded="false" signature="15186:15193" ph="×" />
-                <marker date="1511321996048" expanded="false" signature="15331:15344" ph="..." />
+                <marker date="1511322393679" expanded="true" signature="520:619" ph="INSERT INTO `gestionnaire`... " />
+                <marker date="1511322393679" expanded="true" signature="1184:1350" ph="INSERT INTO `npc`... " />
+                <marker date="1511322393679" expanded="true" signature="1777:1832" ph="SELECT * FRO... npc" />
+                <marker date="1511322393679" expanded="true" signature="2524:2591" ph="DELETE FROM " />
+                <marker date="1511322393679" expanded="true" signature="2990:3153" ph="INSERT INTO `inventaire`... " />
+                <marker date="1511322393679" expanded="true" signature="3418:3581" ph="INSERT INTO `inventaire`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inc/config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="paypal.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/paypal.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="radmin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/radmin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <folding>
+                <marker date="1511318833457" expanded="true" signature="2867:3212" ph="..." />
+                <marker date="1511318833457" expanded="true" signature="2964:3212" ph="..." />
+                <marker date="1511318833457" expanded="true" signature="3012:3212" ph="..." />
+                <marker date="1511318833457" expanded="true" signature="3037:3212" ph="..." />
+                <marker date="1511318833457" expanded="true" signature="3062:3212" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="recaptcha.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/recaptcha.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-57">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="themes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inc/themes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="translator.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inc/translator.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -132,19 +141,20 @@
     <findStrings>
       <find>mysql_connect($hostnameBDD, $userBDD, $passBDD)</find>
       <find>ysql_error</find>
-      <find>mysql_fetch_assoc($req0)</find>
-      <find>mysql_error()</find>
       <find>mysql_fetch_assoc($req)</find>
       <find>$req-&gt;fetch_assoc</find>
       <find>&lt;/i&gt;</find>
+      <find>mysql_error()</find>
+      <find>mysql_fetch_assoc($req0)</find>
+      <find>$db =</find>
     </findStrings>
     <replaceStrings>
       <replace>$mysqli-&gt;error</replace>
       <replace>$mysqli-&gt;connect($hostnameBDD, $userBDD, $passBDD, $database)</replace>
-      <replace>$req0-&gt;fetch_assoc()</replace>
-      <replace>$mysqli-&gt;error()</replace>
       <replace>$req-&gt;fetch_assoc()</replace>
       <replace>&lt;/li&gt;</replace>
+      <replace>$mysqli-&gt;error()</replace>
+      <replace>$req0-&gt;fetch_assoc()</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -159,18 +169,19 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/install.php" />
-        <option value="$PROJECT_DIR$/inc/GestUsers.php" />
-        <option value="$PROJECT_DIR$/inc/GestSimulateur.php" />
         <option value="$PROJECT_DIR$/inc/index.php" />
-        <option value="$PROJECT_DIR$/inc/GestNPC.php" />
-        <option value="$PROJECT_DIR$/inc/GestMap.php" />
-        <option value="$PROJECT_DIR$/inc/GestHypergrid.php" />
-        <option value="$PROJECT_DIR$/inc/GestConfig.php" />
-        <option value="$PROJECT_DIR$/inc/GestAdminUsers.php" />
-        <option value="$PROJECT_DIR$/inc/fonctions.php" />
         <option value="$PROJECT_DIR$/inc/config.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/inc/GestUsers.php" />
+        <option value="$PROJECT_DIR$/inc/GestSimulateur.php" />
+        <option value="$PROJECT_DIR$/inc/GestHypergrid.php" />
+        <option value="$PROJECT_DIR$/inc/GestNPC.php" />
+        <option value="$PROJECT_DIR$/inc/GestMap.php" />
+        <option value="$PROJECT_DIR$/inc/GestConfig.php" />
+        <option value="$PROJECT_DIR$/inc/GestAdminUsers.php" />
+        <option value="$PROJECT_DIR$/inc/fonctions.php" />
+        <option value="$PROJECT_DIR$/inc/npc_inworld.php" />
       </list>
     </option>
   </component>
@@ -213,6 +224,11 @@
               <item name="OpenSim-Manager-Web-V5" type="b2602c69:ProjectViewProjectNode" />
               <item name="OpenSim-Manager-Web-V5" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="OpenSim-Manager-Web-V5" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OpenSim-Manager-Web-V5" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="inc" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -250,12 +266,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1511318856479</updated>
-      <workItem from="1511318857671" duration="3011000" />
+      <workItem from="1511318857671" duration="3405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3011000" />
+    <option name="totallyTimeSpent" value="3405000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1066" extended-state="6" />
@@ -296,297 +312,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/inc/GestTerrain.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
-          <folding>
-            <marker date="1511318833427" expanded="true" signature="2550:2560" ph="..." />
-            <marker date="1511318833427" expanded="true" signature="4520:4533" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/navbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-692">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/paypal.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/radmin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1032">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511318833457" expanded="true" signature="2867:3212" ph="..." />
-            <marker date="1511318833457" expanded="true" signature="2964:3212" ph="..." />
-            <marker date="1511318833457" expanded="true" signature="3012:3212" ph="..." />
-            <marker date="1511318833457" expanded="true" signature="3037:3212" ph="..." />
-            <marker date="1511318833457" expanded="true" signature="3062:3212" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/recaptcha.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1066">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/translator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/themes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestSims.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2851">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511318833421" expanded="true" signature="3559:3569" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestSaveRegion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1304">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511318833419" expanded="true" signature="2194:2204" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestRegion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3446">
-          <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestOpensim.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1700">
-          <caret line="32" column="95" lean-forward="true" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestMap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1225">
-          <caret line="59" column="82" lean-forward="false" selection-start-line="59" selection-start-column="82" selection-end-line="59" selection-end-column="82" />
-          <folding>
-            <marker date="1511320131701" expanded="true" signature="1914:1935" ph="SELECT * FRO... moteurs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestLog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-998">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestInventaire.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-165">
-          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <marker date="1511318833402" expanded="true" signature="3198:3440" ph="..." />
-            <marker date="1511318833402" expanded="true" signature="3356:3430" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestHypergrid.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-431">
-          <caret line="46" column="15" lean-forward="true" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
-          <folding>
-            <marker date="1511320131672" expanded="true" signature="1574:1641" ph="SELECT * FRO... moteurs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestHelp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1511318833396" expanded="true" signature="974:982" ph="ç" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestDirectory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-556">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestContact.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-845">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="52" column="85" lean-forward="false" selection-start-line="52" selection-start-column="85" selection-end-line="52" selection-end-column="85" />
-          <folding>
-            <marker date="1511320387446" expanded="true" signature="1373:1752" ph="UPDATE `conf... " />
-            <marker date="1511320387446" expanded="true" signature="2207:2227" ph="SELECT * FRO... config" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestAdminUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1276">
-          <caret line="270" column="2" lean-forward="false" selection-start-line="270" selection-start-column="2" selection-end-line="270" selection-end-column="2" />
-          <folding>
-            <marker date="1511320387458" expanded="true" signature="3373:3394" ph="SELECT * FRO... moteurs" />
-            <marker date="1511320387458" expanded="true" signature="4932:4939" ph="×" />
-            <marker date="1511320387458" expanded="true" signature="5516:5727" ph="UPDATE users... " />
-            <marker date="1511320387458" expanded="true" signature="6344:6365" ph="SELECT * FRO... moteurs" />
-            <marker date="1511320387458" expanded="true" signature="6712:7057" ph="INSERT INTO users... " />
-            <marker date="1511320387458" expanded="true" signature="7532:7553" ph="SELECT * FRO... moteurs" />
-            <marker date="1511320387458" expanded="true" signature="7946:8337" ph="UPDATE users... " />
-            <marker date="1511320387458" expanded="true" signature="8871:9008" ph="DELETE FROM " />
-            <marker date="1511320387458" expanded="true" signature="10005:10040" ph="SELECT * FRO... users" />
-            <marker date="1511320387458" expanded="true" signature="12253:12274" ph="SELECT * FRO... moteurs" />
-            <marker date="1511320387458" expanded="true" signature="15259:15266" ph="×" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestAbout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/fonctions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6353">
-          <caret line="241" column="9" lean-forward="false" selection-start-line="241" selection-start-column="9" selection-end-line="241" selection-end-column="9" />
-          <folding>
-            <marker date="1511320467517" expanded="true" signature="879:900" ph="SELECT * FRO... moteurs" />
-            <marker date="1511320467517" expanded="true" signature="1930:1940" ph="..." />
-            <marker date="1511320467517" expanded="true" signature="1941:2281" ph="..." />
-            <marker date="1511320467517" expanded="true" signature="1945:2273" ph="..." />
-            <marker date="1511320467517" expanded="true" signature="4879:4899" ph="SELECT * FRO... config" />
-            <marker date="1511320467517" expanded="true" signature="6262:6308" ph="SELECT * FRO... moteurs" />
-            <marker date="1511320467517" expanded="true" signature="7584:7605" ph="SELECT * FRO... moteurs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/flags.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/download.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-233">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestUsers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="44" lean-forward="false" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <marker date="1511319431816" expanded="true" signature="1695:1747" ph="SELECT * FRO... users" />
-            <marker date="1511319431816" expanded="true" signature="2024:2152" ph="UPDATE `user... " />
-            <marker date="1511319431816" expanded="true" signature="2337:2502" ph="UPDATE `user... " />
-            <marker date="1511319431816" expanded="true" signature="3230:3326" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestSimulateur.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1972">
-          <caret line="116" column="6" lean-forward="false" selection-start-line="116" selection-start-column="6" selection-end-line="116" selection-end-column="6" />
-          <folding>
-            <marker date="1511319630805" expanded="true" signature="2692:2977" ph="INSERT INTO moteurs... " />
-            <marker date="1511319630805" expanded="true" signature="3385:3802" ph="UPDATE moteu... " />
-            <marker date="1511319630805" expanded="true" signature="4198:4249" ph="DELETE FROM " />
-            <marker date="1511319630805" expanded="true" signature="5243:5264" ph="SELECT * FRO... moteurs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inc/GestNPC.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4046">
-          <caret line="238" column="85" lean-forward="true" selection-start-line="238" selection-start-column="85" selection-end-line="238" selection-end-column="85" />
-          <folding>
-            <marker date="1511320131726" expanded="true" signature="258:332" ph="SELECT * FRO... gestionnaire" />
-            <marker date="1511320131726" expanded="true" signature="1252:1262" ph="..." />
-            <marker date="1511320131726" expanded="true" signature="2477:2534" ph="DELETE FROM " />
-            <marker date="1511320131726" expanded="true" signature="2868:2927" ph="DELETE FROM " />
-            <marker date="1511320131726" expanded="true" signature="4911:4968" ph="DELETE FROM " />
-            <marker date="1511320131726" expanded="true" signature="5073:5137" ph="DELETE FROM " />
-            <marker date="1511320131726" expanded="true" signature="5242:5308" ph="DELETE FROM " />
-            <marker date="1511320131726" expanded="true" signature="5809:5837" ph="SELECT * FRO... gestionnaire" />
-            <marker date="1511320131726" expanded="true" signature="9365:9415" ph="SELECT * FRO... npc" />
-            <marker date="1511320131726" expanded="true" signature="10359:10444" ph="SELECT * FRO... inventaire" />
-            <marker date="1511320131726" expanded="true" signature="12881:12966" ph="SELECT * FRO... inventaire" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/install.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
@@ -613,20 +338,337 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="133" column="41" lean-forward="true" selection-start-line="133" selection-start-column="41" selection-end-line="133" selection-end-column="41" />
+        <state relative-caret-position="340">
+          <caret line="101" column="9" lean-forward="false" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
           <folding>
-            <marker date="1511321996048" expanded="true" signature="3129:3148" ph="SELECT * FRO... users" />
-            <marker date="1511321996048" expanded="true" signature="4038:4059" ph="SELECT * FRO... moteurs" />
-            <marker date="1511321996048" expanded="true" signature="11395:11575" ph="..." />
-            <marker date="1511321996048" expanded="true" signature="11435:11508" ph="..." />
-            <marker date="1511321996048" expanded="true" signature="11539:11575" ph="..." />
-            <marker date="1511321996048" expanded="false" signature="13934:13941" ph="×" />
-            <marker date="1511321996048" expanded="false" signature="14375:14382" ph="×" />
-            <marker date="1511321996048" expanded="false" signature="14805:14812" ph="×" />
-            <marker date="1511321996048" expanded="false" signature="15186:15193" ph="×" />
-            <marker date="1511321996048" expanded="false" signature="15331:15344" ph="..." />
+            <marker date="1511322148102" expanded="true" signature="3129:3148" ph="SELECT * FRO... users" />
+            <marker date="1511322148102" expanded="true" signature="4041:4062" ph="SELECT * FRO... moteurs" />
+            <marker date="1511322148102" expanded="true" signature="11401:11581" ph="..." />
+            <marker date="1511322148102" expanded="true" signature="11441:11514" ph="..." />
+            <marker date="1511322148102" expanded="true" signature="11545:11581" ph="..." />
+            <marker date="1511322148102" expanded="false" signature="13940:13947" ph="×" />
+            <marker date="1511322148102" expanded="false" signature="14381:14388" ph="×" />
+            <marker date="1511322148102" expanded="false" signature="14811:14818" ph="×" />
+            <marker date="1511322148102" expanded="false" signature="15192:15199" ph="×" />
+            <marker date="1511322148102" expanded="false" signature="15337:15350" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="74" column="4" lean-forward="false" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+          <folding>
+            <marker date="1511322148114" expanded="true" signature="1683:1735" ph="SELECT * FRO... users" />
+            <marker date="1511322148114" expanded="true" signature="2012:2140" ph="UPDATE `user... " />
+            <marker date="1511322148114" expanded="true" signature="2325:2490" ph="UPDATE `user... " />
+            <marker date="1511322148114" expanded="true" signature="3212:3308" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestTerrain.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <marker date="1511318833427" expanded="true" signature="2550:2560" ph="..." />
+            <marker date="1511318833427" expanded="true" signature="4520:4533" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestSimulateur.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="116" column="36" lean-forward="false" selection-start-line="116" selection-start-column="36" selection-end-line="116" selection-end-column="36" />
+          <folding>
+            <marker date="1511322393764" expanded="true" signature="2686:2971" ph="INSERT INTO moteurs... " />
+            <marker date="1511322393764" expanded="true" signature="3379:3796" ph="UPDATE moteu... " />
+            <marker date="1511322393764" expanded="true" signature="4192:4243" ph="DELETE FROM " />
+            <marker date="1511322393764" expanded="true" signature="5231:5252" ph="SELECT * FRO... moteurs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestSims.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511318833421" expanded="true" signature="3559:3569" ph="..." />
+            <marker date="1511318833421" expanded="true" signature="8598:8610" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestSaveRegion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511318833419" expanded="true" signature="2194:2204" ph="..." />
+            <marker date="1511318833419" expanded="true" signature="4133:4146" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestRegion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="35" column="50" lean-forward="true" selection-start-line="35" selection-start-column="50" selection-end-line="35" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestOpensim.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="32" column="95" lean-forward="true" selection-start-line="32" selection-start-column="95" selection-end-line="32" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestNPC.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding>
+            <marker date="1511322393752" expanded="true" signature="252:326" ph="SELECT * FRO... gestionnaire" />
+            <marker date="1511322393752" expanded="true" signature="1246:1256" ph="..." />
+            <marker date="1511322393752" expanded="true" signature="2471:2528" ph="DELETE FROM " />
+            <marker date="1511322393752" expanded="true" signature="2862:2921" ph="DELETE FROM " />
+            <marker date="1511322393752" expanded="true" signature="4905:4962" ph="DELETE FROM " />
+            <marker date="1511322393752" expanded="true" signature="5067:5131" ph="DELETE FROM " />
+            <marker date="1511322393752" expanded="true" signature="5236:5302" ph="DELETE FROM " />
+            <marker date="1511322393752" expanded="true" signature="5803:5831" ph="SELECT * FRO... gestionnaire" />
+            <marker date="1511322393752" expanded="true" signature="9359:9409" ph="SELECT * FRO... npc" />
+            <marker date="1511322393752" expanded="true" signature="10353:10438" ph="SELECT * FRO... inventaire" />
+            <marker date="1511322393752" expanded="true" signature="12875:12960" ph="SELECT * FRO... inventaire" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestMap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+          <folding>
+            <marker date="1511322393703" expanded="true" signature="1908:1929" ph="SELECT * FRO... moteurs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestInventaire.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
+          <folding>
+            <marker date="1511318833402" expanded="true" signature="3198:3440" ph="..." />
+            <marker date="1511318833402" expanded="true" signature="3356:3430" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestLog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestHypergrid.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding>
+            <marker date="1511322393691" expanded="true" signature="1568:1635" ph="SELECT * FRO... moteurs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestHelp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1511318833396" expanded="true" signature="974:982" ph="ç" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestDirectory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestContact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <marker date="1511322393715" expanded="true" signature="1367:1746" ph="UPDATE `conf... " />
+            <marker date="1511322393715" expanded="true" signature="2201:2221" ph="SELECT * FRO... config" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestAdminUsers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4154">
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding>
+            <marker date="1511322393728" expanded="true" signature="3367:3388" ph="SELECT * FRO... moteurs" />
+            <marker date="1511322393728" expanded="true" signature="4926:4933" ph="×" />
+            <marker date="1511322393728" expanded="true" signature="5510:5721" ph="UPDATE users... " />
+            <marker date="1511322393728" expanded="true" signature="6338:6359" ph="SELECT * FRO... moteurs" />
+            <marker date="1511322393728" expanded="true" signature="6706:7051" ph="INSERT INTO users... " />
+            <marker date="1511322393728" expanded="true" signature="7526:7547" ph="SELECT * FRO... moteurs" />
+            <marker date="1511322393728" expanded="true" signature="7940:8331" ph="UPDATE users... " />
+            <marker date="1511322393728" expanded="true" signature="8865:9002" ph="DELETE FROM " />
+            <marker date="1511322393728" expanded="true" signature="9999:10034" ph="SELECT * FRO... users" />
+            <marker date="1511322393728" expanded="true" signature="10732:10767" ph="SELECT * FRO... users" />
+            <marker date="1511322393728" expanded="true" signature="12247:12268" ph="SELECT * FRO... moteurs" />
+            <marker date="1511322393728" expanded="true" signature="15253:15260" ph="×" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/fonctions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="240" column="14" lean-forward="false" selection-start-line="240" selection-start-column="14" selection-end-line="240" selection-end-column="14" />
+          <folding>
+            <marker date="1511322393740" expanded="true" signature="873:894" ph="SELECT * FRO... moteurs" />
+            <marker date="1511322393740" expanded="true" signature="1924:1934" ph="..." />
+            <marker date="1511322393740" expanded="true" signature="1935:2275" ph="..." />
+            <marker date="1511322393740" expanded="true" signature="1939:2267" ph="..." />
+            <marker date="1511322393740" expanded="true" signature="4867:4887" ph="SELECT * FRO... config" />
+            <marker date="1511322393740" expanded="true" signature="6244:6290" ph="SELECT * FRO... moteurs" />
+            <marker date="1511322393740" expanded="true" signature="7560:7581" ph="SELECT * FRO... moteurs" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/GestAbout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/flags.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/download.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="38" lean-forward="false" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/navbar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/npc_inworld.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399">
+          <caret line="44" column="4" lean-forward="false" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="4" />
+          <folding>
+            <marker date="1511322393679" expanded="true" signature="520:619" ph="INSERT INTO `gestionnaire`... " />
+            <marker date="1511322393679" expanded="true" signature="1184:1350" ph="INSERT INTO `npc`... " />
+            <marker date="1511322393679" expanded="true" signature="1777:1832" ph="SELECT * FRO... npc" />
+            <marker date="1511322393679" expanded="true" signature="2524:2591" ph="DELETE FROM " />
+            <marker date="1511322393679" expanded="true" signature="2990:3153" ph="INSERT INTO `inventaire`... " />
+            <marker date="1511322393679" expanded="true" signature="3418:3581" ph="INSERT INTO `inventaire`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/paypal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/radmin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="18" column="4" lean-forward="false" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <marker date="1511318833457" expanded="true" signature="2867:3212" ph="..." />
+            <marker date="1511318833457" expanded="true" signature="2964:3212" ph="..." />
+            <marker date="1511318833457" expanded="true" signature="3012:3212" ph="..." />
+            <marker date="1511318833457" expanded="true" signature="3037:3212" ph="..." />
+            <marker date="1511318833457" expanded="true" signature="3062:3212" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/recaptcha.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-57">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/themes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/translator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -25,7 +25,7 @@ if (isset($_SESSION['authentification']))
     //  Affichage page principale
     //******************************************************
 	
-	$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+	$mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
 	//mysql_select_db($database,$db);
 
 	if (isset($_POST['cmd']))
@@ -39,7 +39,7 @@ if (isset($_SESSION['authentification']))
 		{
 			//echo $_POST['id_user'];echo $_POST['firstname'];echo $_POST['lastname'];echo $_POST['password'];
 			
-			$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+			$mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
 			//mysql_select_db($database,$db);
 			
 			// *** Lecture BDD users  ***
@@ -72,7 +72,7 @@ if (isset($_SESSION['authentification']))
     //******************************************************
     //  Affichage page principale
     //******************************************************
-    $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+    $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
     //mysql_select_db($database,$db);
 	
 	// *** Lecture BDD users  ***

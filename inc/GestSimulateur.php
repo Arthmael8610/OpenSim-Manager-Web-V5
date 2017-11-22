@@ -31,7 +31,7 @@ if (isset($_SESSION['authentification']) && $_SESSION['privilege']>= 3)
 	//******************************************************
 	if (isset($_POST['cmd']))
 	{
-			$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+			$mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
 			//mysql_select_db($database, $db);
 			
 		if($_POST['cmd'] == 'Ajouter')
@@ -113,7 +113,7 @@ if (isset($_SESSION['authentification']) && $_SESSION['privilege']>= 3)
     echo '<th>Delete</th>';
 	echo '</tr>';
 	
-	$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+	$mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
 	//mysql_select_db($database, $db);
 	// *** Lecture BDD config  ***
 	$sql = 'SELECT * FROM moteurs';

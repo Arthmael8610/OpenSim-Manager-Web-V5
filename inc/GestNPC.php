@@ -3,7 +3,7 @@ if (isset($_SESSION['authentification']) && $_SESSION['privilege']>= 3)
 {
 //	echo Affichage_Entete($_SESSION['opensim_select']);
 
-	$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+	$mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
     //mysql_select_db($database,$db);	
 	
 	$sqlA = "SELECT * FROM `gestionnaire` WHERE uuid='".$_SESSION['uuid_region_npc']."'" ;

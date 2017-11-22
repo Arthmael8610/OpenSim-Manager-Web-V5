@@ -34,7 +34,7 @@ if (isset($_SESSION['authentification']))
     // *******************************************************	
     // Lecture des regions.ini et enregistrement dans Matrice
     // *******************************************************
-    $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+    $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
     //mysql_select_db($database,$db);
 	$sql = 'SELECT * FROM moteurs WHERE id_os="'.$_SESSION['opensim_select'].'"';
     $req = $mysqli->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.$mysqli->error());

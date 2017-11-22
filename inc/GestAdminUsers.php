@@ -26,7 +26,7 @@ if (isset($_SESSION['authentification']) && $_SESSION['privilege']>= 3)
 	echo Select_Simulateur($_SESSION['opensim_select']);
 	
 	
-	$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+	$mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
 	//mysql_select_db($database,$db);
 
 	if (isset($_POST['cmd']))

@@ -53,7 +53,7 @@ if (isset($_SESSION['authentification']))
     // *******************************************************
     // Parcours des serveur installes
 
-    $db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+    $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
     //mysql_select_db($database, $db);
 
     $sql = 'SELECT * FROM moteurs';
