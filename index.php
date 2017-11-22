@@ -99,13 +99,13 @@ if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['pas
 	$passwordHash = sha1($_POST['pass']);
 
 	// on se connecte a MySQL
-	$db = mysql_connect($hostnameBDD, $userBDD, $passBDD);
-	mysql_select_db($database,$db);
+	$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+	//mysql_select_db($database,$db);
 
 	$sql = 'SELECT * FROM users';
-	$req = mysql_query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
+	$req = $mysql->query($sql) or die('Erreur SQL !<p>'.$sql.'</p>'.mysql_error());
 
-	while($data = mysql_fetch_assoc($req))
+	while($data = $req->fetch_assoc())
 	{
 		if ($data['firstname'] == $_POST['firstname'] 
         and $data['lastname'] == $_POST['lastname'] 
@@ -130,11 +130,11 @@ if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['pas
     {
         // echo '<p>Bienvenue sur la page administration du site.</p>';
 		// on se connecte a MySQL
-		$db = mysql_connect($hostnameBDD, $userBDD, $passBDD);
-		mysql_select_db($database,$db);
+		$db = $mysqli->connect($hostnameBDD, $userBDD, $passBDD, $database);
+		//mysql_select_db($database,$db);
 		$sql = 'SELECT * FROM moteurs';
-		$req = mysql_query($sql) or die('Erreur SQL!<p>'.$sql.'</p>'.mysql_error());
-		while($data = mysql_fetch_assoc($req))
+		$req = $mysql->query($sql) or die('Erreur SQL!<p>'.$sql.'</p>'.mysql_error());
+		while($data = $req->fetch_assoc())
         {
             $_SESSION['opensim_select'] = $data['id_os'];
             break;
@@ -156,25 +156,25 @@ if (isset($_POST['firstname']) && isset($_POST['lastname']) && isset($_POST['pas
         <span class="caret"></span>
     </button>
     <ul class="dropdown-menu">
-        <li><a href="index.php?style=default"><i class="glyphicon glyphicon-leaf"></i> default</a></i>
-        <li><a href="index.php?style=amelia"><i class="glyphicon glyphicon-leaf"></i> amelia</a></i>
-        <li><a href="index.php?style=cerulean"><i class="glyphicon glyphicon-leaf"></i> cerulean</a></i>
-        <li><a href="index.php?style=cosmo"><i class="glyphicon glyphicon-leaf"></i> cosmo</a></i>
-        <li><a href="index.php?style=cyborg"><i class="glyphicon glyphicon-leaf"></i> cyborg</a></i>
-        <li><a href="index.php?style=darkly"><i class="glyphicon glyphicon-leaf"></i> darkly</a></i>
-        <li><a href="index.php?style=flatly"><i class="glyphicon glyphicon-leaf"></i> flatly</a></i>
-        <li><a href="index.php?style=freelancer"><i class="glyphicon glyphicon-leaf"></i> freelancer</a></i>
-        <li><a href="index.php?style=journal"><i class="glyphicon glyphicon-leaf"></i> journal</a></i>
-        <li><a href="index.php?style=lumen"><i class="glyphicon glyphicon-leaf"></i> lumen</a></i>
-        <li><a href="index.php?style=paper"><i class="glyphicon glyphicon-leaf"></i> paper</a></i>
-        <li><a href="index.php?style=readable"><i class="glyphicon glyphicon-leaf"></i> readable</a></i>		
-        <li><a href="index.php?style=sandstone"><i class="glyphicon glyphicon-leaf"></i> sandstone</a></i>
-        <li><a href="index.php?style=simplex"><i class="glyphicon glyphicon-leaf"></i> simplex</a></i>
-        <li><a href="index.php?style=slate"><i class="glyphicon glyphicon-leaf"></i> slate</a></i>
-        <li><a href="index.php?style=spacelab"><i class="glyphicon glyphicon-leaf"></i> spacelab</a></i>
-        <li><a href="index.php?style=superhero"><i class="glyphicon glyphicon-leaf"></i> superhero</a></i>
-        <li><a href="index.php?style=united"><i class="glyphicon glyphicon-leaf"></i> united</a></i>
-        <li><a href="index.php?style=yety"><i class="glyphicon glyphicon-leaf"></i> yety</a></i>
+        <li><a href="index.php?style=default"><i class="glyphicon glyphicon-leaf"></i> default</a></li>
+        <li><a href="index.php?style=amelia"><i class="glyphicon glyphicon-leaf"></i> amelia</a></li>
+        <li><a href="index.php?style=cerulean"><i class="glyphicon glyphicon-leaf"></i> cerulean</a></li>
+        <li><a href="index.php?style=cosmo"><i class="glyphicon glyphicon-leaf"></i> cosmo</a></li>
+        <li><a href="index.php?style=cyborg"><i class="glyphicon glyphicon-leaf"></i> cyborg</a></li>
+        <li><a href="index.php?style=darkly"><i class="glyphicon glyphicon-leaf"></i> darkly</a></li>
+        <li><a href="index.php?style=flatly"><i class="glyphicon glyphicon-leaf"></i> flatly</a></li>
+        <li><a href="index.php?style=freelancer"><i class="glyphicon glyphicon-leaf"></i> freelancer</a></li>
+        <li><a href="index.php?style=journal"><i class="glyphicon glyphicon-leaf"></i> journal</a></li>
+        <li><a href="index.php?style=lumen"><i class="glyphicon glyphicon-leaf"></i> lumen</a></li>
+        <li><a href="index.php?style=paper"><i class="glyphicon glyphicon-leaf"></i> paper</a></li>
+        <li><a href="index.php?style=readable"><i class="glyphicon glyphicon-leaf"></i> readable</a></li>
+        <li><a href="index.php?style=sandstone"><i class="glyphicon glyphicon-leaf"></i> sandstone</a></li>
+        <li><a href="index.php?style=simplex"><i class="glyphicon glyphicon-leaf"></i> simplex</a></li>
+        <li><a href="index.php?style=slate"><i class="glyphicon glyphicon-leaf"></i> slate</a></li>
+        <li><a href="index.php?style=spacelab"><i class="glyphicon glyphicon-leaf"></i> spacelab</a></li>
+        <li><a href="index.php?style=superhero"><i class="glyphicon glyphicon-leaf"></i> superhero</a></li>
+        <li><a href="index.php?style=united"><i class="glyphicon glyphicon-leaf"></i> united</a></li>
+        <li><a href="index.php?style=yety"><i class="glyphicon glyphicon-leaf"></i> yety</a></li>
     </ul>
 </div>
 <?php endif; ?>
