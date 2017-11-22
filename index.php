@@ -56,6 +56,7 @@ session_start();
 // *********
 // RECAPTCHA
 // *********
+$mysqli = new mysqli;
 if ($recaptcha && $_POST["g-recaptcha"])
 {
     include 'inc/recaptcha.php';

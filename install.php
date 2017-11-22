@@ -101,7 +101,8 @@ if (isset($_POST['etape']) AND $_POST['etape'] == 1)
 	$mysqli = new mysqli;
 
     // on vérifie la connectivité avec le serveur avant d'aller plus loin
-    if(!$mysqli->connect($hote, $login, $pass, $base))
+    $mysqli->connect($hote, $login, $pass, $base);
+    if($mysqli->connect_error)
     {
         exit('<div class="alert alert-danger">Bad connection settings, installation corrupt ...</div>'. RETOUR);
     }
